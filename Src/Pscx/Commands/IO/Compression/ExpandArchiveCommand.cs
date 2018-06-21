@@ -50,7 +50,7 @@ namespace Pscx.Commands.IO.Compression {
         [Parameter(ParameterSetName = ParameterSetObject,      Position = 0, Mandatory = false),
          Parameter(ParameterSetName = ParameterSetPath,        Position = 1, Mandatory = false),
          Parameter(ParameterSetName = ParameterSetLiteralPath, Position = 1, Mandatory = false),
-         Alias("To"),
+         Alias("To", "DestinationPath"),
          ValidateNotNullOrEmpty,
          PscxPath(NoGlobbing = true, ShouldExist = true, PathType = PscxPathType.Container)]
         public PscxPathInfo OutputPath { get; set; }
